@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maiwand Safi Motors | Toyota Dealership</title>
+  <div>
+  	<div id="title">Maiwand Safi Motors | Toyota Dealership</div>
+
+<div id="headings"> <a class="link" href="" id="homo">Home     </a> <a  class="link" href="login.html">Login     </a> <a class="link" href="help.html">Help     </a>  <a class="link" href="cont.html">Contact</a> <a class="link" href="fo.html">About</a> </div>
+
+  </div>
+  <style>
+    /* ---------- GENERAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: linear-gradient(90deg, #000000, #a70000);
+      color: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd000;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+      background: url('images/hero.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 3px 3px 12px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      background-color: rgba(0,0,0,0.4);
+      padding: 15px 30px;
+      border-radius: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      background: rgba(0,0,0,0.4);
+      padding: 10px 25px;
+      border-radius: 10px;
+    }
+
+    /* ---------- CAR SECTION ---------- */
+    .cars {
+      padding: 60px 80px;
+      text-align: center;
+    }
+
+    .cars h2 {
+      font-size: 36px;
+      color: #a70000;
+      margin-bottom: 40px;
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .car {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .car:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    .car img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .car-info h3 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .car-info p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .price {
+      font-size: 18px;
+      color: #c70000;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    /* ---------- ABOUT SECTION ---------- */
+    .about {
+      padding: 80px 100px;
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about img {
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      color: #a70000;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    .about-text p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 70px 40px;
+    }
+
+    .contact h2 {
+      color: #ffb700;
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    button {
+      background: #ff0000;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #cc0000;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 14px;
+      border-top: 2px solid #ff0000;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Maiwand Safi Motors</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#cars">Cars</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Drive the Future with Toyota 2025</h2>
+    <p>Explore the latest models, only at Maiwand Safi Motors</p>
+  </section>
+
+  <section class="cars" id="cars">
+    <h2>Available Toyota Models</h2>
+    <div class="car-grid">
+      <div class="car">
+        <img src="Camry.jpg" alt="Toyota Camry">
+        <div class="car-info">
+          <h3>Toyota Camry 2025</h3>
+          <p>Engine: 2.5L Hybrid</p>
+          <p>Transmission: Automatic</p>
+          <p class="price">$32,400</p>
+        </div>
+      </div>
+
+      <div class="car">
+        <img src="ToyotaCorolla.jpg" alt="Toyota Corolla">
+        <div class="car-info">
+          <h3>Toyota Corolla 2025</h3>
+          <p>Engine: 1.8L Petrol</p>
+          <p>Transmission: CVT</p>
+          <p class="price">$25,200</p>
+        </div>
+      </div>
+
+      <div class="car">
+        <img src="rav4.jpg" alt="Toyota RAV4">
+        <div class="car-info">
+          <h3>Toyota RAV4 2025</h3>
+          <p>Engine: 2.5L Hybrid AWD</p>
+          <p>Transmission: Automatic</p>
+          <p class="price">$38,800</p>
+        </div>
+      </div>
+
+      <div class="car">
+        <img src="Lc.jpg" alt="Toyota Land Cruiser">
+        <div class="car-info">
+          <h3>Toyota Land Cruiser 2025</h3>
+          <p>Engine: 3.5L Twin Turbo</p>
+          <p>Transmission: 10-Speed Auto</p>
+          <p class="price">$89,900</p>
+        </div>
+      </div>
+
+      <div class="car">
+        <img src="Lc.jpg" alt="Toyota Hilux">
+        <div class="car-info">
+          <h3>Toyota Hilux 2025</h3>
+          <p>Engine: 2.8L Diesel</p>
+          <p>Transmission: 6-Speed Auto</p>
+          <p class="price">$42,600</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <img src="ToyotaCorolla.jpg" alt="Maiwand Safi Motors Showroom">
+    <div class="about-text">
+      <h2>About Maiwand Safi Motors</h2>
+      <p>
+        At Maiwand Safi Motors, we bring you the latest Toyota models with unmatched quality, performance, and reliability. 
+        Our mission is to provide every customer with a world-class experience — whether you’re buying your first car or upgrading to the latest SUV.
+      </p>
+      <p>
+        We offer flexible financing options, after-sales service, and expert advice from our professional team. 
+        Discover the joy of driving with confidence and class, only at Maiwand Safi Motors.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Maiwand Safi Motors | Designed by Maiwand Safi
+  </footer>
+
+</body>
+</html>
